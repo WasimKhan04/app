@@ -1,0 +1,8 @@
+package com.marketingapp.controller;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class LeadController {
+
+}

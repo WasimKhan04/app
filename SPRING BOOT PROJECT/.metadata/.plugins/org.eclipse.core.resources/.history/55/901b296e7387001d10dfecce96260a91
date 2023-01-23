@@ -1,0 +1,30 @@
+package com.example.demo;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+
+import com.example.demo.entities.Student;
+import com.example.demo.repository.StudentRepository;
+
+@SpringBootTest
+class CrudDemo4ApplicationTests {
+	
+	@Autowired
+	private StudentRepository studentrepo;
+
+	@Test
+	void saveOneStudent() {
+		Student s=new Student();
+		s.setName("RITU");
+		s.setCourse("WIPRO");
+		s.setFee(36000);
+		studentrepo.save(s);
+	}
+	
+	@Test
+	void deleteOneStudent() {
+		studentrepo.deleteById(11L);
+	}
+
+}

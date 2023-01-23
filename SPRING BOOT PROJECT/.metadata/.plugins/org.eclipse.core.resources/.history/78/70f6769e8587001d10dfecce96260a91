@@ -1,0 +1,5 @@
+package com.marketingapp.entities;
+
+public class Lead {
+
+}

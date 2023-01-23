@@ -1,0 +1,5 @@
+package com.marketingapp.controller;
+
+public class LeadController {
+
+}
